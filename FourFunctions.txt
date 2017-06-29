@@ -1,0 +1,45 @@
+package fourfunctions;
+import java.util.Scanner;
+public class FourFunctions 
+{
+public static int Add(int a,int b)
+{
+    int sum=a+b;
+    return sum;
+}
+public static int Sub(int a,int b)
+{
+    int Sub=a-b;
+    return Sub;
+}
+public static int Mul(int a,int b)
+{
+    int Mul=a*b;
+    return Mul;
+   
+}
+public  int Div(int a,int b)
+{
+    int Div=a/b;
+    return Div;
+}
+ public static void main(String[]args)
+    {
+FourFunctions cobj=new FourFunctions();
+Scanner sin=new Scanner(System.in);
+int num1,num2,result;
+System.out.println("enter first number");
+num1=sin.nextInt();
+System.out.println("enter second number");
+num2=sin.nextInt();
+result=Add(num1,num2);
+System.out.println(result);
+result=Sub(num1,num2);
+System.out.println(result);
+result=Mul(num1,num2);
+System.out.println(result);
+result=cobj.Div(num1,num2);
+System.out.println(result);
+}
+    
+}
