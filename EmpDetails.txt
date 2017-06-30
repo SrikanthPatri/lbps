@@ -1,0 +1,41 @@
+package prjct;
+import java.util.Scanner;
+public class Prjct {
+     String empname;
+        int empsalary;
+        float count=0;
+        Scanner none = new Scanner(System.in);
+public void details(){
+       
+        System.out.println("enter the name");
+        empname=none.next();
+        System.out.println("enter the  " +empname+ "'s salary");
+        empsalary=none.nextInt();
+        }
+public void salary(){    
+        if(empsalary==10000){
+        float a=(empsalary/100)*30;
+       count=count+a;
+                }
+        else if(empsalary==50000){
+        float b=(empsalary/100)*20;
+       count=count+b;
+        }
+        else if(empsalary==100000){
+        float c=(empsalary/100)*10;
+        count=count+c;
+        }
+    }
+public void display(){
+    System.out.println("total bonus is"+count);
+    }
+    public static void main(String[] args) {
+    Prjct obj = new Prjct();
+    for(int i=1;i<=2;i++){
+    obj.details();
+    obj.salary();
+    }
+    obj.display();
+        }
+
+      }
