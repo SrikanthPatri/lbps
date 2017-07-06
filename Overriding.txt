@@ -1,0 +1,42 @@
+package overriding;
+public class Overriding
+{
+    public static void main(String[]args)
+    {
+        Bmw bobj=new Bmw();
+        System.out.println(bobj.speedlimit());
+    
+  
+        Jaguar jobj=new Jaguar();
+        System.out.println(jobj.speedlimit());
+    }
+}
+        
+         class Car
+                {
+                    public int speedlimit()
+                    {
+                        return 150;
+                    }
+}
+        class Bmw extends Car
+                {
+                    public int speedlimit()
+                    {
+                        return 180;
+                    }
+}
+        class Jaguar extends Car
+                {
+                    public int speedlimit()
+                    {
+                        return 200;
+                    }
+        }                  
+            
+
+        
+    
+        
+
+   
