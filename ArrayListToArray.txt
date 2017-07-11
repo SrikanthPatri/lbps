@@ -1,0 +1,24 @@
+package arraylisttoarray;
+import java.util.ArrayList;
+ public class ArrayListToArray {
+ 
+  public static void main(String[] args) {
+   
+    ArrayList arrayList = new ArrayList();
+   
+   
+    arrayList.add("SRIKANTH");
+    arrayList.add("KEERTHY");
+    arrayList.add("KRISHNA");
+    arrayList.add("BHARATH");
+    arrayList.add("SANJEEV");
+   
+    Object[] objArray = arrayList.toArray();
+   
+    System.out.println("ArrayList to Array");
+      for (Object objArray1 : objArray) {
+          System.out.println(objArray1);
+      }
+  }
+}
+ 
